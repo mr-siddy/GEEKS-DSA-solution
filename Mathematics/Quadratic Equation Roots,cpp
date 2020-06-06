@@ -1,0 +1,49 @@
+//Initial Template for C++
+/* C++ program to find roots of a quadratic equation */
+#include <bits/stdc++.h>
+using namespace std;
+
+
+ // } Driver Code Ends
+//User function Template for C++
+
+//You need to complete this function
+void quadraticRoots(int a,int b, int c)
+{
+   int d;
+d=(b*b)-(4*a*c);
+if(d<0)
+{
+  cout<<"Imaginary";
+}
+else{
+float x=(-b+sqrt(d))/(2*a);
+float y=(-b-sqrt(d))/(2*a);
+cout<<floor(x)<<" "<<floor(y);
+   }
+   
+   
+   // Your don't need to printline
+   // It will automatically be 
+   // handled by driver code
+}
+
+
+
+// { Driver Code Starts.
+
+int main() {
+	int T; 
+	cin>>T; //input number of testcases
+	
+	while(T--)
+	{
+	    int a, b, c; 
+	    cin>>a>>b>>c; //Input a, b, and c
+	    
+	    quadraticRoots(a,b,c);
+	    cout<<endl;
+	    
+	}
+	return 0;
+}  // } Driver Code Ends
